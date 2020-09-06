@@ -214,7 +214,7 @@
                                 <ol class="breadcrumb text-right">
                                     <li><a href="#">主页</a></li>
                                     <li><a href="#">专利管理</a></li>
-                                    <li class="active">专利申请</li>
+                                    <li class="active">专利审核进度</li>
                                 </ol>
                             </div>
                         </div>
@@ -224,152 +224,55 @@
         </div>
         <!--路径-->
 
-        <!--表格-->
+        <!--进度条-->
         <div class="content">
             <div class="animated fadeIn">
                 <div class="row">
+
                     <div class="col-lg-12">
                         <div class="card">
                             <div class="card-header">
-                                <strong>专利申请表</strong>
+                                <h4>专利审核进度</h4>
                             </div>
-                            <div class="card-body card-block">
-                                <form action="#" method="post" enctype="multipart/form-data" class="form-horizontal">
-                                    <div class="row form-group">
-                                        <div class="col col-md-3"><label class=" form-control-label">申请用户</label></div>
-                                        <div class="col-12 col-md-9">
-                                            <p class="form-control-static">Username</p>
-                                        </div>
-                                    </div>
-                                    <div class="row form-group">
-                                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">申请号</label></div>
-                                        <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control"><small class="form-text text-muted">以CN为开头的申请编号</small></div>
-                                    </div>
-                                    <div class="row form-group">
-                                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">申请日期</label></div>
-                                        <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control"><small class="form-text text-muted">输入格式按照YYYY/MM/DD</small></div>
-                                    </div>
-                                    <div class="row form-group">
-                                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">公告号</label></div>
-                                        <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control"><small class="form-text text-muted">以CN为开头的公告编号</small></div>
-                                    </div>
-                                    <div class="row form-group">
-                                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">公告日期</label></div>
-                                        <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control"><small class="form-text text-muted">输入格式按照YYYY/MM/DD</small></div>
-                                    </div>
-                                    <div class="row form-group">
-                                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">专利名称</label></div>
-                                        <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control"><small class="form-text text-muted">输入申请的专利名称</small></div>
-                                    </div>
-                                    <div class="row form-group">
-                                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">IPC号</label></div>
-                                        <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control"><small class="form-text text-muted">输入该专利的国际分类号</small></div>
-                                    </div>
-                                    <div class="row form-group">
-                                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">申请人</label></div>
-                                        <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control"><small class="form-text text-muted">输入该专利的申请人或公司名称</small></div>
-                                    </div>
-                                    <div class="row form-group">
-                                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">发明人</label></div>
-                                        <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control"><small class="form-text text-muted">输入该专利的发明人，如有多人请以“ ; ”来分隔人名</small></div>
-                                    </div>
-                                    <div class="row form-group">
-                                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">地址</label></div>
-                                        <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control"><small class="form-text text-muted">输入该专利的申请人或公司的地址</small></div>
-                                    </div>
-                                    <div class="row form-group">
-                                        <div class="col col-md-3"><label for="select" class=" form-control-label">当前法律状态</label></div>
-                                        <div class="col-12 col-md-9">
-                                            <select name="select" id="select" class="form-control">
-                                                <option value="0">选择一个法律状态</option>
-                                                <option value="1">授权</option>
-                                                <option value="2">专利权终止</option>
-                                                <option value="3">公开</option>
-                                                <option value="4">实质审查的生效</option>
-                                                <option value="5">专利申请的视为撤回</option>
-                                                <option value="6">专利权的无效宣告</option>
-                                            </select>
-                                            <small class="form-text text-muted">选择专利当前的法律状态</small>
-                                        </div>
-                                    </div>
-                                    <div class="row form-group">
-                                        <div class="col col-md-3"><label for="select" class=" form-control-label">当前专利有效性</label></div>
-                                        <div class="col-12 col-md-9">
-                                            <select name="select" id="select" class="form-control">
-                                                <option value="0">选择一个专利状态</option>
-                                                <option value="1">有效</option>
-                                                <option value="2">专利在审</option>
-                                                <option value="3">无效</option>
-                                            </select>
-                                            <small class="form-text text-muted">选择专利当前的有效性</small>
-                                        </div>
-                                    </div>
-                                    <div class="row form-group">
-                                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">优先权</label></div>
-                                        <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control"><small class="form-text text-muted">输入该专利的优先权</small></div>
-                                    </div>
-                                    <div class="row form-group">
-                                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">专利代理机构</label></div>
-                                        <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control"><small class="form-text text-muted">输入该专利的代理机构</small></div>
-                                    </div>
-                                    <div class="row form-group">
-                                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">代理人</label></div>
-                                        <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control"><small class="form-text text-muted">输入该专利的代理人</small></div>
-                                    </div>
-                                    <div class="row form-group">
-                                        <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">专利摘要</label></div>
-                                        <div class="col-12 col-md-9"><textarea name="textarea-input" id="textarea-input" rows="9" placeholder="Content..." class="form-control"></textarea></div>
-                                    </div>
-                                    <div class="row form-group">
-                                        <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">权利要求书</label></div>
-                                        <div class="col-12 col-md-9"><textarea name="textarea-input" id="textarea-input" rows="9" placeholder="Content..." class="form-control"></textarea><small class="form-text text-muted">如果字数过多可以在下方上传权利要求书文件</small></div>
-                                    </div>
-                                    <div class="row form-group">
-                                        <div class="col col-md-3"><label for="file-input" class=" form-control-label">上传权利要求书</label></div>
-                                        <div class="col-12 col-md-9"><input type="file" id="file-input" name="file-input" class="form-control-file"></div>
-                                    </div>
-                                    <div class="row form-group">
-                                        <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">专利说明书</label></div>
-                                        <div class="col-12 col-md-9"><textarea name="textarea-input" id="textarea-input" rows="9" placeholder="Content..." class="form-control"></textarea><small class="form-text text-muted">如果字数过多可以在下方上专利说明书文件</small></div>
-                                    </div>
-                                    <div class="row form-group">
-                                        <div class="col col-md-3"><label for="file-input" class=" form-control-label">上传专利说明书</label></div>
-                                        <div class="col-12 col-md-9"><input type="file" id="file-input" name="file-input" class="form-control-file"></div>
-                                    </div> 
-                                </form>
-                            </div>
-                            <div class="row form-group">
-                                <div class="col col-md-3"></div>
-                                <button type="submit" class="btn btn-primary btn-lg">
-                                    <i class="fa fa-dot-circle-o"></i><strong>提交申请</strong>
-                                </button>
-                                <div class="col col-md-3"></div>
-                                <button type="reset" class="btn btn-danger btn-lg">
-                                    <i class="fa fa-ban"></i><strong>重置表格</strong>
-                                </button>
+                            <div class="card-body">
+                                <p class="muted">您上传的专利目前的状态：<strong>status</strong></p>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
                             </div>
                         </div>
+                        <!-- /# card -->
+                    </div>
+                    <!-- /col-lg-12 -->
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- /.content -->
+        <div class="clearfix"></div>
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-inner bg-white">
+                <div class="row">
+                    <div class="col-sm-12">
+                        Copyright &copy; 2020.南京理工大学 All rights reserved.
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
+        <!-- /.site-footer -->
         
-    <!-- /.content -->
-    <div class="clearfix"></div>
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="footer-inner bg-white">
-            <div class="row">
-                <div class="col-sm-12">
-                    Copyright &copy; 2020.南京理工大学 All rights reserved.
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- /.site-footer -->
-        
-        
-
     </div>
     <!-- Right Panel -->
 
@@ -403,4 +306,3 @@
     
 </body>
 </html>
-
