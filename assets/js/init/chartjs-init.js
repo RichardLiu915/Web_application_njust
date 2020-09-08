@@ -7,12 +7,12 @@
     var myChart = new Chart( ctx, {
         type: 'line',
         data: {
-            labels: [ "2012", "2013", "2014", "2015", "2016", "2017", "2018" ],
+            labels: [ "2014", "2015", "2016", "2017", "2018", "2019", "2020" ],
             type: 'line',
             defaultFontFamily: 'Montserrat',
             datasets: [ {
-                data: [ 0, 7, 3, 5, 2, 8, 6 ],
-                label: "Expense",
+                data: [ 103451864, 265134266, 323451729, 428462614, 507726154, 598763551, 635697432 ],
+                label: "专利录入数",
                 backgroundColor: 'rgba(0,200,155,.35)',
                 borderColor: 'rgba(0,200,155,0.60)',
                 borderWidth: 3.5,
@@ -22,8 +22,8 @@
                 pointBackgroundColor: 'rgba(0,200,155,0.60)',
                     },
                     {
-                data: [ 0, 6, 3, 4, 3, 7, 10 ],
-                label: "Profit",
+                data: [ 113797050, 291047692, 345796901, 491308875, 518498769, 628639906, 639267175 ],
+                label: "专利审核数",
                 backgroundColor: 'rgba(0,194,146,.25)',
                 borderColor: 'rgba(0,194,146,0.5)',
                 borderWidth: 3.5,
@@ -60,23 +60,23 @@
                 xAxes: [ {
                     display: true,
                     gridLines: {
-                        display: false,
+                        display: true,
                         drawBorder: false
                     },
                     scaleLabel: {
                         display: false,
-                        labelString: 'Month'
+                        labelString: '年份'
                     }
                         } ],
                 yAxes: [ {
                     display: true,
                     gridLines: {
-                        display: false,
+                        display: true,
                         drawBorder: false
                     },
                     scaleLabel: {
                         display: true,
-                        labelString: 'Value'
+                        labelString: '专利数'
                     }
                         } ]
             },
@@ -85,94 +85,6 @@
             }
         }
     } );
-
-
-    //Sales chart
-    var ctx = document.getElementById( "sales-chart" );
-    ctx.height = 150;
-    var myChart = new Chart( ctx, {
-        type: 'line',
-        data: {
-            labels: [ "2012", "2013", "2014", "2015", "2016", "2017", "2018" ],
-            type: 'line',
-            defaultFontFamily: 'Montserrat',
-            datasets: [ {
-                label: "Foods",
-                data: [ 0, 30, 15, 110, 50, 63, 120 ],
-                backgroundColor: 'transparent',
-                borderColor: 'rgba(220,53,69,0.75)',
-                borderWidth: 3,
-                pointStyle: 'circle',
-                pointRadius: 5,
-                pointBorderColor: 'transparent',
-                pointBackgroundColor: 'rgba(220,53,69,0.75)',
-                    }, {
-                label: "Electronics",
-                data: [ 0, 50, 40, 80, 35, 99, 80 ],
-                backgroundColor: 'transparent',
-                borderColor: 'rgba(40,167,69,0.75)',
-                borderWidth: 3,
-                pointStyle: 'circle',
-                pointRadius: 5,
-                pointBorderColor: 'transparent',
-                pointBackgroundColor: 'rgba(40,167,69,0.75)',
-                    } ]
-        },
-        options: {
-            responsive: true,
-
-            tooltips: {
-                mode: 'index',
-                titleFontSize: 12,
-                titleFontColor: '#000',
-                bodyFontColor: '#000',
-                backgroundColor: '#fff',
-                titleFontFamily: 'Montserrat',
-                bodyFontFamily: 'Montserrat',
-                cornerRadius: 3,
-                intersect: false,
-            },
-            legend: {
-                display: false,
-                labels: {
-                    usePointStyle: true,
-                    fontFamily: 'Montserrat',
-                },
-            },
-            scales: {
-                xAxes: [ {
-                    display: true,
-                    gridLines: {
-                        display: false,
-                        drawBorder: false
-                    },
-                    scaleLabel: {
-                        display: false,
-                        labelString: 'Month'
-                    }
-                        } ],
-                yAxes: [ {
-                    display: true,
-                    gridLines: {
-                        display: false,
-                        drawBorder: false
-                    },
-                    scaleLabel: {
-                        display: true,
-                        labelString: 'Value'
-                    }
-                        } ]
-            },
-            title: {
-                display: false,
-                text: 'Normal Legend'
-            }
-        }
-    } );
-
-
-
-
 
 
 
@@ -182,22 +94,23 @@
     var myChart = new Chart( ctx, {
         type: 'line',
         data: {
-            labels: [ "January", "February", "March", "April", "May", "June", "July" ],
+            labels: [ "2014", "2015", "2016", "2017", "2018", "2019", "2020" ],
             datasets: [
                 {
-                    label: "My First dataset",
-                    borderColor: "rgba(0,0,0,.09)",
+                    label: "用户贡献值",
+                    borderColor: "rgba(135,206,250,0.9)",
                     borderWidth: "1",
-                    backgroundColor: "rgba(0,0,0,.07)",
-                    data: [ 20, 47, 35, 43, 65, 45, 35 ]
+                    backgroundColor: "rgba(135,206,250,0.5)",
+                    pointHighlightStroke: "rgba(26,179,148,1)",
+                    data: [ 603271, 3009991, 3876121, 4766521, 5443212, 5766421, 6087311 ]
                             },
                 {
-                    label: "My Second dataset",
+                    label: "用户注册数",
                     borderColor: "rgba(0, 194, 146, 0.9)",
                     borderWidth: "1",
                     backgroundColor: "rgba(0, 194, 146, 0.5)",
                     pointHighlightStroke: "rgba(26,179,148,1)",
-                    data: [ 16, 32, 18, 27, 42, 33, 44 ]
+                    data: [ 302871, 1249821, 1766512, 1965132, 2098132, 2512312, 2986874 ]
                             }
                         ]
         },
@@ -222,18 +135,18 @@
     var myChart = new Chart( ctx, {
         type: 'bar',
         data: {
-            labels: [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul" ],
+            labels: [ '一月', '二月', '三月', '四月', '五月', '六月','七月','八月','九月','十月','十一月','十二月'],
             datasets: [
                 {
-                    label: "My First dataset",
-                    data: [ 65, 59, 80, 81, 56, 55, 45 ],
+                    label: "专利审核通过数",
+                    data: [ 4083461, 2987512, 3723143, 4091231, 3497123, 3766523, 3098731, 3698321, 3230712, 342152, 0, 0 ],
                     borderColor: "rgba(0, 194, 146, 0.9)",
                     borderWidth: "0",
                     backgroundColor: "rgba(0, 194, 146, 0.5)"
                             },
                 {
-                    label: "My Second dataset",
-                    data: [ 28, 48, 40, 19, 86, 27, 76 ],
+                    label: "专利审核未通过",
+                    data: [ 408346, 200751, 340182, 208731, 209313, 300913, 321884, 297741, 274612, 28712, 0, 0 ],
                     borderColor: "rgba(0,0,0,0.09)",
                     borderWidth: "0",
                     backgroundColor: "rgba(0,0,0,0.07)"
@@ -251,69 +164,33 @@
         }
     } );
 
-    //radar chart
-    var ctx = document.getElementById( "radarChart" );
-    ctx.height = 160;
-    var myChart = new Chart( ctx, {
-        type: 'radar',
-        data: {
-            labels: [ [ "Eating", "Dinner" ], [ "Drinking", "Water" ], "Sleeping", [ "Designing", "Graphics" ], "Coding", "Cycling", "Running" ],
-            datasets: [
-                {
-                    label: "My First dataset",
-                    data: [ 65, 70, 66, 45, 5, 55, 40 ],
-                    borderColor: "rgba(0, 194, 146, 0.6)",
-                    borderWidth: "1",
-                    backgroundColor: "rgba(0, 194, 146, 0.4)"
-                            },
-                {
-                    label: "My Second dataset",
-                    data: [ 28, 5, 55, 19, 63, 27, 68 ],
-                    borderColor: "rgba(0, 194, 146, 0.7",
-                    borderWidth: "1",
-                    backgroundColor: "rgba(0, 194, 146, 0.5)"
-                            }
-                        ]
-        },
-        options: {
-            legend: {
-                position: 'top'
-            },
-            scale: {
-                ticks: {
-                    beginAtZero: true
-                }
-            }
-        }
-    });
+    
 
 
     //pie chart
     var ctx = document.getElementById( "pieChart" );
-    ctx.height = 300;
+    ctx.height = 200;
     var myChart = new Chart( ctx, {
         type: 'pie',
         data: {
             datasets: [ {
-                data: [ 45, 25, 20, 10 ],
+                data: [ 254278972, 152567383, 228851075],
                 backgroundColor: [
                                     "rgba(0, 194, 146,0.9)",
-                                    "rgba(0, 194, 146,0.7)",
-                                    "rgba(0, 194, 146,0.5)",
-                                    "rgba(0,0,0,0.07)"
+                                    "rgba(0, 194, 146,0.6)",
+                                    "rgba(0, 194, 146,0.3)",                             
                                 ],
                 hoverBackgroundColor: [
                                     "rgba(0, 194, 146,0.9)",
-                                    "rgba(0, 194, 146,0.7)",
-                                    "rgba(0, 194, 146,0.5)",
-                                    "rgba(0,0,0,0.07)"
+                                    "rgba(0, 194, 146,0.6)",
+                                    "rgba(0, 194, 146,0.3)",
                                 ]
 
                             } ],
             labels: [
-                            "green",
-                            "green",
-                            "green"
+                            "外观设计专利",
+                            "实用新型专利",
+                            "发明专利"
                         ]
         },
         options: {
@@ -321,96 +198,10 @@
         }
     } );
 
-    //doughut chart
-    var ctx = document.getElementById( "doughutChart" );
-    ctx.height = 150;
-    var myChart = new Chart( ctx, {
-        type: 'doughnut',
-        data: {
-            datasets: [ {
-                data: [ 35, 40, 20, 5 ],
-                backgroundColor: [
-                                    "rgba(0, 194, 146,0.9)",
-                                    "rgba(0, 194, 146,0.7)",
-                                    "rgba(0, 194, 146,0.5)",
-                                    "rgba(0,0,0,0.07)"
-                                ],
-                hoverBackgroundColor: [
-                                    "rgba(0, 194, 146,0.9)",
-                                    "rgba(0, 194, 146,0.7)",
-                                    "rgba(0, 194, 146,0.5)",
-                                    "rgba(0,0,0,0.07)"
-                                ]
+    
 
-                            } ],
-            labels: [
-                            "green",
-                            "green",
-                            "green",
-                            "green"
-                        ]
-        },
-        options: {
-            responsive: true
-        }
-    } );
 
-    //polar chart
-    var ctx = document.getElementById( "polarChart" );
-    ctx.height = 150;
-    var myChart = new Chart( ctx, {
-        type: 'polarArea',
-        data: {
-            datasets: [ {
-                data: [ 15, 18, 10, 7, 19],
-                backgroundColor: [
-                                    "rgba(0, 194, 146,0.9)",
-                                    "rgba(0, 194, 146,0.8)",
-                                    "rgba(0, 194, 146,0.7)",
-                                    "rgba(0,0,0,0.2)",
-                                    "rgba(0, 194, 146,0.5)"
-                                ]
-
-                            } ],
-            labels: [
-                            "green",
-                            "green",
-                            "green",
-                            "green"
-                        ]
-        },
-        options: {
-            responsive: true
-        }
-    } );
-
-    // single bar chart
-    var ctx = document.getElementById( "singelBarChart" );
-    ctx.height = 150;
-    var myChart = new Chart( ctx, {
-        type: 'bar',
-        data: {
-            labels: [ "Sun", "Mon", "Tu", "Wed", "Th", "Fri", "Sat" ],
-            datasets: [
-                {
-                    label: "My First dataset",
-                    data: [ 55, 50, 75, 80, 56, 55, 60 ],
-                    borderColor: "rgba(0, 194, 146, 0.9)",
-                    borderWidth: "0",
-                    backgroundColor: "rgba(0, 194, 146, 0.5)"
-                            }
-                        ]
-        },
-        options: {
-            scales: {
-                yAxes: [ {
-                    ticks: {
-                        beginAtZero: true
-                    }
-                                } ]
-            }
-        }
-    } );
+    
 
 
 

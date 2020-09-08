@@ -210,7 +210,7 @@
                                 <ol class="breadcrumb text-right">
                                     <li><a href="#">主页</a></li>
                                     <li><a href="#">专利管理</a></li>
-                                    <li class="active">按持有人查询</li>
+                                    <li class="active">专利持有人查询结果</li>
                                 </ol>
                             </div>
                         </div>
@@ -220,36 +220,98 @@
         </div>
         <!--路径-->
 
-        <!--查询表格-->
         <div class="content">
             <div class="animated fadeIn">
+                
                 <div class="row">
-
                     <div class="col-lg-12">
                         <div class="card">
                             <div class="card-header">
-                                <i class="fa fa-search"></i>
-                                <strong>专利持有人查询表</strong>
+                                <strong class="card-title">专利持有人查询结果</strong>
                             </div>
-                            <div class="card-body card-block">
-                                <form action="#" method="post" enctype="multipart/form-data" class="form-horizontal">
-                                    <div class="row form-group">
-                                        <div class="col-12 col-md-12"><input type="text" id="text-input" name="text-input" placeholder="查询专利持有人" class="form-control"><small class="form-text text-muted">输入专利持有人姓名或账户编号</small></div>
-                                    </div>
-
-                                </form>
-                                <div class="card-body">
-                        
-                                    <a href="patent_holder_inquiry_result.html"><button type="button" class="btn btn-outline-primary btn-lg btn-block">查询</button></a>
-                                </div>
-                            </div>
+                            <div class="table-stats order-table ov-h">
+                                <table class="table ">
+                                    <thead>
+                                        <tr>
+                                            <th class="serial">#</th>
+                                            <th class="avatar">持有人</th>
+                                            <th>ID</th>
+                                            <th>姓名</th>
+                                            <th>账号权限等级</th>
+                                            <th>持有专利数</th>
+                                            <th>状态</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="serial">1.</td>
+                                            <td class="avatar">
+                                                <div class="round-img">
+                                                    <a href="#"><img class="rounded-circle" src="images/avatar/1.jpg" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td> #5469 </td>
+                                            <td> <span class="name">Platinum</span> </td>
+                                            <td> <span class="product">lv4</span> </td>
+                                            <td> <span class="count">31</span> </td>
+                                            <td>
+                                                <span class="badge badge-complete">在线</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="serial">2.</td>
+                                            <td class="avatar">
+                                                <div class="round-img">
+                                                    <a href="#"><img class="rounded-circle" src="images/avatar/2.jpg" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td> #5468 </td>
+                                            <td>  <span class="name">Chen</span> </td>
+                                            <td> <span class="product">lv5</span> </td>
+                                            <td><span class="count">43</span></td>
+                                            <td>
+                                                <span class="badge badge-complete">在线</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="serial">3.</td>
+                                            <td class="avatar">
+                                                <div class="round-img">
+                                                    <a href="#"><img class="rounded-circle" src="images/avatar/3.jpg" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td> #5467 </td>
+                                            <td>  <span class="name">Exusiai</span> </td>
+                                            <td> <span class="product">lv3</span> </td>
+                                            <td><span class="count">17</span></td>
+                                            <td>
+                                                <span class="badge badge-complete">在线</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="serial">4.</td>
+                                            <td class="avatar">
+                                                <div class="round-img">
+                                                    <a href="#"><img class="rounded-circle" src="images/avatar/4.jpg" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td> #5466 </td>
+                                            <td>  <span class="name">Angelina</span> </td>
+                                            <td> <span class="product">lv2</span> </td>
+                                            <td><span class="count">5</span></td>
+                                            <td>
+                                                <span class="badge badge-secondary">离线</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div> <!-- /.table-stats -->
                         </div>
                     </div>
 
                 </div>
             </div>
         </div>
-        <!--查询表格-->
 
 
 
@@ -298,7 +360,6 @@
     <script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/moment.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.js"></script>
     <script src="assets/js/init/fullcalendar-init.js"></script>
-    
  
     
 </body>

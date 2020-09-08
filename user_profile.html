@@ -209,8 +209,7 @@
                             <div class="page-title">
                                 <ol class="breadcrumb text-right">
                                     <li><a href="#">主页</a></li>
-                                    <li><a href="#">专利管理</a></li>
-                                    <li class="active">按持有人查询</li>
+                                    <li class="active">用户档案</li>
                                 </ol>
                             </div>
                         </div>
@@ -220,52 +219,161 @@
         </div>
         <!--路径-->
 
-        <!--查询表格-->
         <div class="content">
             <div class="animated fadeIn">
                 <div class="row">
-
-                    <div class="col-lg-12">
+                    <!--用户卡片-->
+                    <div class="col-md-4">
                         <div class="card">
                             <div class="card-header">
-                                <i class="fa fa-search"></i>
-                                <strong>专利持有人查询表</strong>
+                                <strong class="card-title mb-3">用户</strong>
+                            </div>
+                            <div class="card-body">
+                                <div class="mx-auto d-block">
+                                    <img class="rounded-circle mx-auto d-block" src="images/admin.JPG" alt="Card image cap">
+                                    <h5 class="text-sm-center mt-2 mb-1">Amiya</h5>
+                                    <div class="location text-sm-center"><i class="fa fa-map-marker"></i> 中国，上海 </div>
+                                </div>
+                                <hr>
+                                <div class="card-text text-sm-center">
+                                    <a href="https://www.facebook.com"><i class="fa fa-facebook pr-1"></i></a>
+                                    <a href="https://www.twitter.com"><i class="fa fa-twitter pr-1"></i></a>
+                                    <a href="https://www.linkedin.com"><i class="fa fa-linkedin pr-1"></i></a>
+                                    <a href="https://www.Gmail.com"><i class="fa fa-envelope-o pr-1"></i></a>
+                                </div>
+                                </hr>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--用户卡片-->
+                    <!--表格-->
+                    <div class="col-lg-8">
+                        <div class="card">
+                            <div class="card-header">
+                                <strong>用户档案</strong>
                             </div>
                             <div class="card-body card-block">
                                 <form action="#" method="post" enctype="multipart/form-data" class="form-horizontal">
                                     <div class="row form-group">
-                                        <div class="col-12 col-md-12"><input type="text" id="text-input" name="text-input" placeholder="查询专利持有人" class="form-control"><small class="form-text text-muted">输入专利持有人姓名或账户编号</small></div>
+                                        <div class="col col-md-3"><label class=" form-control-label">用户名称</label></div>
+                                        <div class="col-12 col-md-9">
+                                            <p class="form-control-static">Amiya</p>
+                                        </div>
                                     </div>
 
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label class=" form-control-label">生日</label></div>
+                                        <div class="col-12 col-md-9">
+                                            <p class="form-control-static">12-23</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label class=" form-control-label">账号</label></div>
+                                        <div class="col-12 col-md-9">
+                                            <p class="form-control-static">Amiya@Gmail.com</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label class=" form-control-label">账号创建日期</label></div>
+                                        <div class="col-12 col-md-9">
+                                            <p class="form-control-static">2009-12-23</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label class=" form-control-label">账号权限</label></div>
+                                        <div class="col-12 col-md-9">
+                                            <p class="form-control-static">lv6 管理员</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label class=" form-control-label">地址</label></div>
+                                        <div class="col-12 col-md-9">
+                                            <p class="form-control-static">中国，上海</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">更改地址</label></div>
+                                        <div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" placeholder=" " class="form-control"><small class="form-text text-muted">输入新的地址</small></div>
+                                    </div>
+
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label class=" form-control-label">持有专利数</label></div>
+                                        <div class="col-12 col-md-9">
+                                            <p class="form-control-static">56</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label class=" form-control-label">审核专利数</label></div>
+                                        <div class="col-12 col-md-9">
+                                            <p class="form-control-static">936</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label class=" form-control-label">协助审核专利数</label></div>
+                                        <div class="col-12 col-md-9">
+                                            <p class="form-control-static">28936</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label class=" form-control-label">参与社区讨论次数</label></div>
+                                        <div class="col-12 col-md-9">
+                                            <p class="form-control-static">435123</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label class=" form-control-label">社区贡献值</label></div>
+                                        <div class="col-12 col-md-9">
+                                            <p class="form-control-static">783862123</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"></div>
+                                        <button type="submit" class="btn btn-primary">
+                                            <i class="fa fa-dot-circle-o"></i><strong>应用更改</strong>
+                                        </button>
+                                        <div class="col col-md-3"></div>
+                                        <button type="reset" class="btn btn-secondary">
+                                            <i class="fa fa-ban"></i><strong>取消更改</strong>
+                                        </button>
+                                    </div>
+
+
                                 </form>
-                                <div class="card-body">
-                        
-                                    <a href="patent_holder_inquiry_result.html"><button type="button" class="btn btn-outline-primary btn-lg btn-block">查询</button></a>
-                                </div>
                             </div>
                         </div>
                     </div>
+                    <!--表格-->
+
 
                 </div>
             </div>
         </div>
-        <!--查询表格-->
 
 
-
-    <!-- /.content -->
-    <div class="clearfix"></div>
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="footer-inner bg-white">
-            <div class="row">
-                <div class="col-sm-12">
-                    Copyright &copy; 2020.南京理工大学 All rights reserved.
+        <!-- /.content -->
+        <div class="clearfix"></div>
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-inner bg-white">
+                <div class="row">
+                    <div class="col-sm-12">
+                        Copyright &copy; 2020.南京理工大学 All rights reserved.
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <!-- /.site-footer -->
+        </footer>
+        <!-- /.site-footer -->
         
         
 
@@ -298,7 +406,6 @@
     <script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/moment.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.js"></script>
     <script src="assets/js/init/fullcalendar-init.js"></script>
-    
  
     
 </body>

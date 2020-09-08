@@ -53,8 +53,8 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>专利查询</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-table"></i><a href="tables-basic.html">按持有人查询</a></li>
-                            <li><i class="fa fa-table"></i><a href="tables-data.html">按专利查询</a></li>
+                            <li><i class="fa fa-table"></i><a href="patent_holder_inquiry.html">按持有人查询</a></li>
+                            <li><i class="fa fa-table"></i><a href="patent_inquiry.html">按专利查询</a></li>
                         </ul>
                     </li>
 
@@ -63,21 +63,20 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-bar-chart"></i>数据统计图</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-line-chart"></i><a href="charts-chartjs.html">专利申请统计</a></li>
-                            <li><i class="menu-icon fa fa-area-chart"></i><a href="charts-flot.html">网站用户注册统计</a></li>
+                            <li><i class="menu-icon fa fa-line-chart"></i><a href="patent_statistics.html">系统数据统计</a></li>
                         </ul>
                     </li>
 
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-location-arrow"></i>专利注册所在地</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-street-view"></i><a href="maps-vector.html">所在地统计</a></li>
+                            <li><i class="menu-icon ti ti-world"></i><a href="patent_location.html">所在地统计</a></li>
                         </ul>
                     </li>
 
                     <li class="menu-title">设置</li><!-- /.menu-title -->
                     <li>
-                        <a href="User_settings.html"><i class="menu-icon fa fa-cog"></i>用户设置</a>
+                        <a href="user_settings.html"><i class="menu-icon fa fa-cog"></i>用户设置</a>
                     </li>
 
                 </ul>
@@ -179,13 +178,13 @@
                         </a>
 
                         <div class="user-menu dropdown-menu">
-                            <a class="nav-link" href="#"><i class="fa fa- user"></i>我的档案</a>
+                            <a class="nav-link" href="user_profile.html"><i class="fa fa- user"></i>我的档案</a>
 
                             <a class="nav-link" href="#"><i class="fa fa- user"></i>注意事项<span class="count">7</span></a>
 
-                            <a class="nav-link" href="#"><i class="fa fa -cog"></i>设置</a>
+                            <a class="nav-link" href="user_settings.html"><i class="fa fa -cog"></i>设置</a>
 
-                            <a class="nav-link" href="#"><i class="fa fa-power -off"></i>注销</a>
+                            <a class="nav-link" href="page-login.html"><i class="fa fa-power -off"></i>注销</a>
                         </div>
                     </div>
 
@@ -224,6 +223,7 @@
         <div class="content">
             <div class="animated fadeIn">
                 <div class="row">
+
                     <!--用户卡片-->
                     <div class="col-md-4">
                         <aside class="profile-nav alt">
@@ -274,32 +274,32 @@
                                             <div class="form-check">
                                                 <div class="checkbox">
                                                     <label for="checkbox1" class="form-check-label ">
-                                                        <input type="checkbox" id="checkbox1" name="checkbox1" value="option1" class="form-check-input"> 提交专利
+                                                        <input type="checkbox" id="checkbox1" name="checkbox1" value="option1" class="form-check-input"> 提交专利 lv1
                                                     </label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <label for="checkbox2" class="form-check-label ">
-                                                        <input type="checkbox" id="checkbox2" name="checkbox2" value="option2" class="form-check-input"> 在社区发言
+                                                        <input type="checkbox" id="checkbox2" name="checkbox2" value="option2" class="form-check-input"> 在社区发言 lv2
                                                     </label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <label for="checkbox3" class="form-check-label ">
-                                                        <input type="checkbox" id="checkbox3" name="checkbox3" value="option3" class="form-check-input"> 协助审核专利
+                                                        <input type="checkbox" id="checkbox3" name="checkbox3" value="option3" class="form-check-input"> 协助审核专利 lv3
                                                     </label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <label for="checkbox4" class="form-check-label ">
-                                                        <input type="checkbox" id="checkbox4" name="checkbox4" value="option4" class="form-check-input"> 单独审核专利
+                                                        <input type="checkbox" id="checkbox4" name="checkbox4" value="option4" class="form-check-input"> 单独审核专利 lv4
                                                     </label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <label for="checkbox5" class="form-check-label ">
-                                                        <input type="checkbox" id="checkbox5" name="checkbox5" value="option5" class="form-check-input"> 删除专利
+                                                        <input type="checkbox" id="checkbox5" name="checkbox5" value="option5" class="form-check-input"> 删除专利 lv5
                                                     </label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <label for="checkbox6" class="form-check-label ">
-                                                        <input type="checkbox" id="checkbox6" name="checkbox6" value="option6" class="form-check-input"> 任命为管理员 (将包括以上权限)
+                                                        <input type="checkbox" id="checkbox6" name="checkbox6" value="option6" class="form-check-input"> 任命为管理员(完全权限) lv6
                                                     </label>
                                                 </div>
                                             </div>
@@ -372,32 +372,32 @@
                                             <div class="form-check">
                                                 <div class="checkbox">
                                                     <label for="checkbox1" class="form-check-label ">
-                                                        <input type="checkbox" id="checkbox1" name="checkbox1" value="option1" class="form-check-input"> 提交专利
+                                                        <input type="checkbox" id="checkbox1" name="checkbox1" value="option1" class="form-check-input"> 提交专利 lv1
                                                     </label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <label for="checkbox2" class="form-check-label ">
-                                                        <input type="checkbox" id="checkbox2" name="checkbox2" value="option2" class="form-check-input"> 在社区发言
+                                                        <input type="checkbox" id="checkbox2" name="checkbox2" value="option2" class="form-check-input"> 在社区发言 lv2
                                                     </label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <label for="checkbox3" class="form-check-label ">
-                                                        <input type="checkbox" id="checkbox3" name="checkbox3" value="option3" class="form-check-input"> 协助审核专利
+                                                        <input type="checkbox" id="checkbox3" name="checkbox3" value="option3" class="form-check-input"> 协助审核专利 lv3
                                                     </label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <label for="checkbox4" class="form-check-label ">
-                                                        <input type="checkbox" id="checkbox4" name="checkbox4" value="option4" class="form-check-input"> 单独审核专利
+                                                        <input type="checkbox" id="checkbox4" name="checkbox4" value="option4" class="form-check-input"> 单独审核专利 lv4
                                                     </label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <label for="checkbox5" class="form-check-label ">
-                                                        <input type="checkbox" id="checkbox5" name="checkbox5" value="option5" class="form-check-input"> 删除专利
+                                                        <input type="checkbox" id="checkbox5" name="checkbox5" value="option5" class="form-check-input"> 删除专利 lv5
                                                     </label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <label for="checkbox6" class="form-check-label ">
-                                                        <input type="checkbox" id="checkbox6" name="checkbox6" value="option6" class="form-check-input"> 任命为管理员 (将包括以上权限)
+                                                        <input type="checkbox" id="checkbox6" name="checkbox6" value="option6" class="form-check-input"> 任命为管理员(完全权限) lv6
                                                     </label>
                                                 </div>
                                             </div>
@@ -470,32 +470,32 @@
                                             <div class="form-check">
                                                 <div class="checkbox">
                                                     <label for="checkbox1" class="form-check-label ">
-                                                        <input type="checkbox" id="checkbox1" name="checkbox1" value="option1" class="form-check-input"> 提交专利
+                                                        <input type="checkbox" id="checkbox1" name="checkbox1" value="option1" class="form-check-input"> 提交专利 lv1
                                                     </label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <label for="checkbox2" class="form-check-label ">
-                                                        <input type="checkbox" id="checkbox2" name="checkbox2" value="option2" class="form-check-input"> 在社区发言
+                                                        <input type="checkbox" id="checkbox2" name="checkbox2" value="option2" class="form-check-input"> 在社区发言 lv2
                                                     </label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <label for="checkbox3" class="form-check-label ">
-                                                        <input type="checkbox" id="checkbox3" name="checkbox3" value="option3" class="form-check-input"> 协助审核专利
+                                                        <input type="checkbox" id="checkbox3" name="checkbox3" value="option3" class="form-check-input"> 协助审核专利 lv3
                                                     </label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <label for="checkbox4" class="form-check-label ">
-                                                        <input type="checkbox" id="checkbox4" name="checkbox4" value="option4" class="form-check-input"> 单独审核专利
+                                                        <input type="checkbox" id="checkbox4" name="checkbox4" value="option4" class="form-check-input"> 单独审核专利 lv4
                                                     </label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <label for="checkbox5" class="form-check-label ">
-                                                        <input type="checkbox" id="checkbox5" name="checkbox5" value="option5" class="form-check-input"> 删除专利
+                                                        <input type="checkbox" id="checkbox5" name="checkbox5" value="option5" class="form-check-input"> 删除专利 lv5
                                                     </label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <label for="checkbox6" class="form-check-label ">
-                                                        <input type="checkbox" id="checkbox6" name="checkbox6" value="option6" class="form-check-input"> 任命为管理员 (将包括以上权限)
+                                                        <input type="checkbox" id="checkbox6" name="checkbox6" value="option6" class="form-check-input"> 任命为管理员(完全权限) lv6
                                                     </label>
                                                 </div>
                                             </div>
@@ -568,32 +568,32 @@
                                             <div class="form-check">
                                                 <div class="checkbox">
                                                     <label for="checkbox1" class="form-check-label ">
-                                                        <input type="checkbox" id="checkbox1" name="checkbox1" value="option1" class="form-check-input"> 提交专利
+                                                        <input type="checkbox" id="checkbox1" name="checkbox1" value="option1" class="form-check-input"> 提交专利 lv1
                                                     </label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <label for="checkbox2" class="form-check-label ">
-                                                        <input type="checkbox" id="checkbox2" name="checkbox2" value="option2" class="form-check-input"> 在社区发言
+                                                        <input type="checkbox" id="checkbox2" name="checkbox2" value="option2" class="form-check-input"> 在社区发言 lv2
                                                     </label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <label for="checkbox3" class="form-check-label ">
-                                                        <input type="checkbox" id="checkbox3" name="checkbox3" value="option3" class="form-check-input"> 协助审核专利
+                                                        <input type="checkbox" id="checkbox3" name="checkbox3" value="option3" class="form-check-input"> 协助审核专利 lv3
                                                     </label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <label for="checkbox4" class="form-check-label ">
-                                                        <input type="checkbox" id="checkbox4" name="checkbox4" value="option4" class="form-check-input"> 单独审核专利
+                                                        <input type="checkbox" id="checkbox4" name="checkbox4" value="option4" class="form-check-input"> 单独审核专利 lv4
                                                     </label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <label for="checkbox5" class="form-check-label ">
-                                                        <input type="checkbox" id="checkbox5" name="checkbox5" value="option5" class="form-check-input"> 删除专利
+                                                        <input type="checkbox" id="checkbox5" name="checkbox5" value="option5" class="form-check-input"> 删除专利 lv5
                                                     </label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <label for="checkbox6" class="form-check-label ">
-                                                        <input type="checkbox" id="checkbox6" name="checkbox6" value="option6" class="form-check-input"> 任命为管理员 (将包括以上权限)
+                                                        <input type="checkbox" id="checkbox6" name="checkbox6" value="option6" class="form-check-input"> 任命为管理员(完全权限) lv6
                                                     </label>
                                                 </div>
                                             </div>
@@ -618,6 +618,7 @@
 
                 </div>
             </div>
+        </div>
 
 
 
@@ -625,19 +626,19 @@
 
 
 
-        <!-- /.content -->
-        <div class="clearfix"></div>
-        <!-- Footer -->
-        <footer class="site-footer">
-            <div class="footer-inner bg-white">
-                <div class="row">
-                    <div class="col-sm-12">
-                        Copyright &copy; 2020.南京理工大学 All rights reserved.
-                    </div>
+    <!-- /.content -->
+    <div class="clearfix"></div>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-inner bg-white">
+            <div class="row">
+                <div class="col-sm-12">
+                    Copyright &copy; 2020.南京理工大学 All rights reserved.
                 </div>
             </div>
-        </footer>
-        <!-- /.site-footer -->
+        </div>
+    </footer>
+    <!-- /.site-footer -->
         
         
 
